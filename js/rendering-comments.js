@@ -1,5 +1,3 @@
-// логика рендера комментов
-
 import { commentsContainer } from './change-comments.js';
 
 const renderComments = (id, objects) => {

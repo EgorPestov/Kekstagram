@@ -1,5 +1,3 @@
-// хранилище вспомогательных функций
-
 const ALERT_SHOW_TIME = 2000;
 const getRandomInteger = (min, max) => Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1)) + min;
 

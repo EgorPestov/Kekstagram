@@ -1,5 +1,3 @@
-// логика отображения загруженного фото
-
 const FILE_TYPES = ['jpg', 'jpeg', 'png'];
 const fileChooser = document.querySelector('.img-upload__input');
 const preview = document.querySelector('.img-upload__preview img');

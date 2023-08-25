@@ -1,5 +1,3 @@
-// модуль под логику загрузки и валидации фото
-
 import { isEscKeydown, showAlert } from './util.js';
 import { sendData, errorWindow } from './fetch.js';
 
@@ -24,7 +22,6 @@ const pristine = new Pristine(uploadForm, {
   errorTextParent: 'img-upload__field-wrapper',
 });
 
-// валидация поля хэштегов (разбита на три случая для вывода корректных сообщений об ошибке)
 const validateHashtagsByExample = (value) => {
   if (value === '') {
     return true;
@@ -73,7 +70,6 @@ hashtagsInput.addEventListener('keyup', () => {
   submitButton.disabled = (!pristine.validate());
 });
 
-// валидация текста
 const validateText = (value) => value.length <= MAX_TEXT_LENGTH;
 
 pristine.addValidator(textInput, validateText, `Максимальная длина комментария - ${MAX_TEXT_LENGTH} символов`);
@@ -83,7 +79,6 @@ textInput.addEventListener('keyup', () => {
   submitButton.disabled = (!pristine.validate());
 });
 
-// здесь убирается нажатие Escape при фокусе в инпуте
 hashtagsInput.addEventListener('keydown', (evt) => {
   evt.stopPropagation();
 });
@@ -92,7 +87,6 @@ textInput.addEventListener('keydown', (evt) => {
   evt.stopPropagation();
 });
 
-// открытие формы
 const onUploadButtonChange = () => {
   uploadOverlay.classList.remove('hidden');
   document.querySelector('body').classList.add('modal-open');
@@ -100,7 +94,6 @@ const onUploadButtonChange = () => {
 
 uploadButton.addEventListener('change', onUploadButtonChange);
 
-// закрытие формы
 const closeForm = () => {
   uploadOverlay.classList.add('hidden');
   uploadButton.value = '';

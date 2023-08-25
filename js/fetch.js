@@ -114,7 +114,6 @@ const setDiscussedFilterClick = (objects) => {
   }, RERENDER_DELAY));
 };
 
-// получение данных и отрисовка миниатюр
 const getData = async () => {
   let response;
   try {
@@ -134,7 +133,6 @@ const getData = async () => {
   filterList.classList.remove('img-filters--inactive');
 };
 
-// отправка данных формы
 const sendData = async (body, onSuccess) => {
   let response;
   try {

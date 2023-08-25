@@ -1,5 +1,3 @@
-// логика отрисовщика большого фото и комментариев
-
 import { renderComments } from './rendering-comments.js';
 import { SHOWABLE_COMMENTS_COUNT, commentsLoader, onLoaderClick } from './change-comments.js';
 import { isEscKeydown } from './util.js';

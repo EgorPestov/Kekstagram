@@ -1,5 +1,3 @@
-// логика отрисовщика миниатюр фото
-
 const picturesContainer = document.querySelector('.pictures');
 
 const renderPhotos = (objects, sortMethod) => {

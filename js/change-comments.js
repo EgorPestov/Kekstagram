@@ -1,5 +1,3 @@
-// логика работы с комментариями
-
 const SHOWABLE_COMMENTS_COUNT = 5;
 
 const commentsContainer = document.querySelector('.social__comments');
