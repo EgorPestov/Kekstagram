@@ -1,4 +1,4 @@
-# Kekstagram: a sipmle analogue of Instagram
+# Kekstagram: a simple analogue of Instagram
 by: Egor Pestov <egorpestov2012@yandex.ru>
 
 
