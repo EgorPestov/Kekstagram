@@ -1,51 +1,22 @@
-# Личный проект «Кекстаграм»
+# Kekstagram: a simple analogue of Instagram
+by: Egor Pestov <egorpestov2012@yandex.ru>
 
-* Студент: [Егор Пестов](https://up.htmlacademy.ru/javascript/28/user/2273727).
-* Наставник: `Олег Зубов`.
-
----
-
-_Не удаляйте и не изменяйте самовольно файлы и папки:_
-_`.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `package-lock.json`, `package.json`., `.github`_
 
 ---
 
-[Как работать с Git на проекте](Contributing.md) | [Как работать над проектом](Workflow.md)
-
-### Памятка
-
-#### 1. Зарегистрируйтесь на Гитхабе
-
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-Откройте репозиторий и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/35275222-1d624452-0050-11e8-8aca-06d2832724ce.png">
-
-Получится вот так:
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/35275223-1d7cf9fa-0050-11e8-829b-98ac3c9a4f8b.png">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/35275224-1d97a7dc-0050-11e8-89f9-41c9a7b2ae9c.png">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
+Stack: HTML, CSS, native JS, Babel
 
 ---
 
-<a href="https://htmlacademy.ru/intensive/javascript"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/javascript/logo-for-github-2.png"></a>
+Kekstagram - a simple analogue of Instagram. The project serves as a platform for practicing native JavaScript and working with CSS. This is a single-page application.
 
-Репозиторий создан для обучения на интенсивном онлайн‑курсе «[JavaScript. Профессиональная разработка веб-интерфейсов](https://htmlacademy.ru/intensive/javascript)» от [HTML Academy](https://htmlacademy.ru).
+The project incorporates the following functionality:
+
+* Displaying data fetched from the server (using fetch) in the form of a feed of images (cards). Clicking on any of the cards will open up detailed information about it, including the number of likes and comments. If there are more than five comments, which are also obtained from the server, only five will be initially displayed on the page, accompanied by a "load more" button. This button will load additional comments in batches of five until all comments are shown.
+
+* Photos can be sorted by the number of comments, displaying a random selection of ten, or in the order received from the server.
+
+* Upon opening the menu, a drag-and-drop feature is available by clicking on the central icon. This allows users to upload any image to the interface, after which they can edit it by adjusting its scale and applying one of the available filters. Users can also adjust the intensity of the filter from 0 to 100%.
+
+* Following this, users can add hashtags (extensive validation ensures that no more than five hashtags are allowed, they are not excessively short or long, do not consist solely of numbers, and are not duplicated) and the main post text (with validation for a maximum of 140 characters). Afterward, the content can be sent to the server. Various notification options are provided to indicate whether the image was successfully sent or if there was a server-side error. In case of an error, user-entered information will not be lost, and users will have the opportunity to attempt the submission again.
+
