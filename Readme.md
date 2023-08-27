@@ -4,7 +4,7 @@ by: Egor Pestov <egorpestov2012@yandex.ru>
 
 ---
 
-Stack: HTML, CSS, native JS, Babel
+Stack: HTML, CSS, JS, Babel
 
 ---
 
