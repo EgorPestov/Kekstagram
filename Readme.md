@@ -4,13 +4,13 @@ by: Egor Pestov <egorpestov2012@yandex.ru>
 
 ---
 
-Stack: HTML, CSS, JS, Babel
+<b>Stack:</b> HTML, CSS, JS, Babel
 
 ---
 
-Kekstagram - a simple analogue of Instagram. The project serves as a platform for practicing native JavaScript and working with CSS. This is a single-page application.
+<b>Kekstagram</b> - a simple analogue of Instagram. The project serves as a platform for practicing native JavaScript and working with CSS. This is a single-page application.
 
-The project incorporates the following functionality:
+<b>The project incorporates the following functionality:</b>
 
 * Displaying data fetched from the server (using fetch) in the form of a feed of images (cards). Clicking on any of the cards will open up detailed information about it, including the number of likes and comments. If there are more than five comments, which are also obtained from the server, only five will be initially displayed on the page, accompanied by a "load more" button. This button will load additional comments in batches of five until all comments are shown.
 
